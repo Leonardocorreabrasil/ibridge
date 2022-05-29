@@ -1,0 +1,112 @@
+.introducao 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    box-sizing: border-box;
+    max-width: 980px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introducao-conteudo 
+{
+    align-self: end;
+    padding-bottom: 80px;
+}
+
+
+.introducao h1 
+{
+    margin-bottom: 32px;
+    font-size: 48px;
+    line-height: 1.125;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.introducao p 
+{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #ffff;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.introducao a 
+{
+    display: inline-block;
+    padding: 16px 32px;
+    background: #32CD32;
+    color: #ffff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.introducao a:hover
+{
+    display: inline-block;
+    padding: 16px 32px;
+    background: #ffff;
+    color: #32CD32;
+    border-radius: 4px;
+    
+}
+
+@media (max-width: 600px)
+{
+    .introducao a 
+    {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 980px)
+{
+    .introducao h1 
+    {
+        font-size: 36pxpx;
+    }
+    .introducao p 
+    {
+        font-size: 18px;
+    }
+}
+
+
+@media(max-width: 800px)
+{
+    .introducao-bg
+    {
+        padding-top: 40px;
+    }
+    .introducao 
+    {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .introducao-conteudo
+    {
+        padding-bottom: 0px;
+    }
+    .introducao h1 
+    {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .introducao img 
+    {
+        height: 300px;
+        width: 100%;
+    }
+}
